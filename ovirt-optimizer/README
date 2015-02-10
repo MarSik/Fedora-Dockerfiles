@@ -1,0 +1,9 @@
+A Dockerfile for ovirt-optimizer
+
+BUILD
+
+docker build -t ovirt-optimizer-v1 .
+
+RUN
+
+docker run ovirt-optimizer-v1
