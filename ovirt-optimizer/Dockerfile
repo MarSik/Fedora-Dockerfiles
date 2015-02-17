@@ -3,7 +3,7 @@ FROM fedora:21
 MAINTAINER rgolan <rgolan@redhat.com>
 
 RUN yum -y install git iproute && yum clean all
-RUN yum -y install https://kojipkgs.fedoraproject.org//packages/maven/3.2.1/11.fc21/noarch/maven-3.2.1-11.fc21.noarch.rpm
+RUN yum -y install https://kojipkgs.fedoraproject.org//packages/maven/3.2.2/2.fc21/noarch/maven-3.2.2-2.fc21.noarch.rpm
 
 # ovirt-engine is assumed to be installed on the docking host. setting dockerhost record to resolve it.
 ADD dockerhost.sh /dockerhost.sh
